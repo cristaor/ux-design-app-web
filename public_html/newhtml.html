@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <link href="styles/listaAlarmas.css" rel="stylesheet" type="text/css"/>
+        <script src="script/always.js" type="text/javascript"></script>
+        <script type="text/javascript">
+	// <![CDATA[
+	var myMenu;
+	window.onload = function() {
+		myMenu = new SDMenu("my_menu");
+		myMenu.init();
+		myMenu.expandAll();  
+	};
+	// ]]>
+	</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <span class="menu_opciones2" id="menu_oculto" >
+            <div id=menu_oculto2>
+
+            <table width=25 height="25" border="0" valign=top align="center" cellspacing=0 cellpadding=0>
+                <tr>
+                    <td width="100%" valign="center" align=left class=menu_izq height=20 onclick="javascript:mostrar_menu();">
+                        <img src="images/menu2.jpg" width=50 height=50 border=0> 
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </span>
+        <span class="menu_opciones" id="izq1" >
+            <div id=izq2>
+
+            <table width=100% height="95%" border="0" valign=top align="center" cellspacing=0 cellpadding=0>
+  
+                <tr>
+     
+                    <td width="100%" valign="center" align=left class=menu_izq height=20 onclick="javascript:ocultar_menu();">
+                        <a href=# onclick="javascript:ocultar_menu();"><img src="images/menu2.jpg" width=20 height=20 border=0></a> &nbsp;&nbsp;&nbsp; Menu  
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100" valign="center" class=menu_izq2  height=80><img src="images/user.png" width=35 height=33 border=0>&nbsp;&nbsp;&nbsp;&nbsp;admin</td>
+                </tr>
+                <tr>
+    
+                    <td width="150" valign="top">
+                        <div  id="my_menu" class="sdmenu">
+                            <div>
+                            <span>Opciones</span>
+                                <a href="#" onclick="irA('listaAlarmas.html')">Lista de Alarmas</a>
+                                <a href="#" onclick="irA('registro.html')">Usuario</a>
+                                <a href="#" onclick="irA('alarma.html')">Crear Alarma</a>
+                                <a href="#" onclick="void();">Opcion4</a>
+                                <a href="#" onclick="void();">Opcion5</a>
+                            </div> 
+                      </div>
+
+                    </td>
+                </tr>
+            </TABLE>
+            </div>
+        </span>
+         <span class="area_trabajo" id="contenido">
+            <table width="100%" height="100%" border="0" class=contenido>
+                <tr><td width="100%" valign=top align=right>
+                    </td>
+                </tr>
+            </table>
+          </span>
+    </body>
+</html>

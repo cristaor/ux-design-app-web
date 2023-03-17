@@ -1,0 +1,287 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+
+html, body{
+    height: 100%;
+}
+
+body {
+  background-image: url("../images/fondo_web.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+h4{
+        font-family:Tahoma, Verdana;
+        text-align:center;
+}
+.grid-container {
+  display: grid;
+  /*grid-template-rows: 100px;100px;100px;100px;100px;100px;100px;*/
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 5px 20px;
+  grid-template-areas:
+  "titulo titulo titulo titulo titulo titulo titulo titulo titulo titulo"
+  "area1 area1 area1 area2 area2 area2 area2 area2 area2 area2"
+  "area3 area3 area3 area4 area4 area4 area4 area4 area4 area4"
+  "area5 area5 area5 area6 area6 area6 area6 area6 area6 area6"
+  "area7 area7 area7 area8 area8 area8 area8 area8 area8 area8"
+  "area9 area9 area9 area10 area10 area10 area10 area10 area10 area10"
+  "area11 area11 area11 area12 area12 area12 area12 area12 area12 area12"
+  "area13 area13 area13 area13 area13 area14 area14 area14 area14 area14";
+  /*justify-items: center;*/
+  align-items: center;
+  width:95%;
+  padding-bottom:10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  vertical-align: top;
+}
+.grid-item1 {
+  background: none;
+  text-align: right;
+  border: none;
+  grid-area: area1;
+}
+
+.grid-item2 {
+  background: none;
+  text-align: left;
+  border: none;
+  grid-area: area2;
+   
+}
+
+.grid-item3 {
+  background: none;
+  text-align: right;
+  border: none;
+  grid-area: area3;
+}
+
+.grid-item4 {
+  background: none;
+  text-align: left;
+  border: none;
+  grid-area: area4;
+  
+}
+
+.grid-item5 {
+  background: none;
+  text-align: right;
+  border: none;
+  grid-area: area5;
+  
+}
+
+.grid-item6 {
+  background: none;
+  text-align:left;
+  border: none;
+  grid-area: area6;
+}
+
+.grid-item7 {
+  background: none;
+  text-align: right;
+  border: none;
+  grid-area: area7;
+  padding-bottom: 35px;
+  padding-top: 35px;
+}
+.grid-item8 {
+  text-align: left;
+  border: none;
+  grid-area: area8;
+  color: #878787;
+  font-family: Arial, Verdana, sans-serif;
+    
+}
+
+.grid-item9 {
+  background: none;
+  text-align: right;
+  border: none;
+  grid-area: area9;
+}
+.grid-item10 {
+  background: none;
+  text-align: left;
+  border: none;
+  grid-area: area10;
+}
+.grid-item11 {
+  background: none;
+  text-align: right;
+  border: none;
+  grid-area: area11;
+}
+.grid-item12 {
+  background: none;
+  text-align: left;
+  border: none;
+  grid-area: area12;
+}
+.grid-item13 {
+  background: none;
+  text-align: center;
+  border: none;
+  grid-area: area13;
+}
+.grid-item14 {
+  background: none;
+  text-align: center;
+  border: none;
+  grid-area: area14;
+}
+.span_login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:60%;
+            width:100%;
+            vertical-align: top;
+    }
+ 
+ .titulo{
+        font-family: Arial, Verdana, sans-serif;
+        color: #000000;
+        text-align: left;
+        font-weight: bold;
+        font: bold Tahoma;
+        grid-area: titulo;
+        /*padding: 0px 0px 10px 0px;*/
+}
+.caja_form2
+    {
+        background-color:#FFFFFF;
+        color:#999999;
+        opacity: 0.8;
+        font-family:Tahoma, Verdana;
+        text-align:left;
+        font-size: 12px;
+        border: 1px solid #999999;
+        padding: 8px;
+        border-radius: 5px;
+        width: 100%
+    }
+label{
+        color:#729FCF;
+        font-family:Tahoma, Verdana;
+        text-align:left;
+        font-size: 11px;
+    }
+    
+    
+.boton1:enabled
+{
+	color: white;
+ 	background-color: #d19926;
+	font-family: Tahoma, Verdana;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	cursor: hand;
+	padding: 5px;
+        border-radius: 5px;
+        font-size: 12px;
+}
+
+.boton1:disabled
+{
+	color: #729fcf;
+ 	background-color: #e6e6e6;
+	font-family: Tahoma, Verdana;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	cursor: hand;
+	padding: 5px ;
+        border-radius: 5px;
+        font-size: 12px;
+}
+.boton2:enabled
+{
+	color: white;
+ 	background-color: #d11779;
+        opacity: 0.64;
+	font-family: Tahoma, Verdana;
+	text-align: center;
+        font-size: 12px;
+	vertical-align: middle;
+	font-weight: bold;
+	cursor: hand;
+	padding: 5px;
+        border-radius: 5px;
+}
+a{
+    color: #077104;
+    opacity: 0.67;
+    font-size: 12px;
+    font-family: Tahoma, Verdana
+    
+}
+input {
+  width: 100%;
+}
+input[type=text]:focus {
+        background-color:#FFFFFF;
+        color:#4D4D4D;
+        opacity: 0.8;
+        font-family:Tahoma, Verdana;
+        text-align:left;
+        font-size: 12px;
+        border: 1px solid #4D4D4D;
+       
+}
+.contenido_normal
+    {
+        color: #CCCCCC;
+        font-size: 12px;
+        padding-bottom: 10px;
+        font-family: Tahoma, Verdana;
+	font-weight: bold;
+    }
+    
+/* Para ventanas emergentes*/
+.modal-contenido{
+  background-color:aqua;
+  width:300px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+}
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transition: all 1s;
+}
+#miModal:target{
+  opacity:1;
+  cursor: pointer;
+  pointer-events:auto;
+}
+
+.emergente{
+	  position:fixed;
+	  left:100px;
+	  top:100px;
+	  z-index:1;
+}
+.emergente2{
+	  width: 800;
+	  height: 400;
+	  background-color: #FFFFFF;
+}

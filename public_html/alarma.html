@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <script src="script/always.js" type="text/javascript"></script>
+        <title>Allways Oclock</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link href="styles/alarma.css?n=1" rel="stylesheet" type="text/css"/>
+              <script type="text/javascript">
+            // <![CDATA[
+                var myMenu;
+              window.onload = function() {
+		myMenu = new SDMenu("my_menu");
+		myMenu.init();
+		myMenu.expandAll();
+                ocultar_menu();
+	};
+        // ]]>
+	</script>
+    </head>
+    <body>
+        <h4>Crear / Editar Alarma</h4>
+        <span class="menu_opciones2" id="menu_oculto" >
+            <div id=menu_oculto2>
+
+            <table width=25 height="25" border="0" valign=top align="center" cellspacing=0 cellpadding=0>
+                <tr>
+                    <td width="100%" valign="center" align=left class=menu_izq height=20 onclick="javascript:mostrar_menu();">
+                        <img src="images/menu2.jpg" width=20 height=20 border=0> 
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </span>
+        <span class="menu_opciones" id="izq1" >
+            <div id=izq2>
+
+            <table width=100% height="95%" border="0" valign=top align="center" cellspacing=0 cellpadding=0>
+  
+                <tr>
+     
+                    <td width="100%" valign="center" align=left class=menu_izq height=20 onclick="javascript:ocultar_menu();">
+                        <a href=# onclick="javascript:ocultar_menu();"><img src="images/menu2.jpg" width=20 height=20 border=0></a> &nbsp;&nbsp;&nbsp; Menu  
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100" valign="center" class=menu_izq2  height=80><img src="images/user.png" width=35 height=33 border=0>&nbsp;&nbsp;&nbsp;&nbsp;admin</td>
+                </tr>
+                <tr>
+    
+                    <td width="150" valign="top">
+                        <div  id="my_menu" class="sdmenu">
+                            <div>
+                            <span>Opciones</span>
+                                <a href="#" onclick="irA('listaAlarmas.html')">Lista de Alarmas</a>
+                                <a href="#" onclick="irA('registro.html')">Usuario</a>
+                                <a href="#" onclick="irA('alarma.html')">Crear Alarma</a>
+                                <a href="#" onclick="void();">Opcion4</a>
+                                <a href="#" onclick="void();">Opcion5</a>
+                            </div> 
+                      </div>
+
+                    </td>
+                </tr>
+            </TABLE>
+            </div>
+        </span>
+         <span class="area_trabajo" id="contenido">
+            <table width="100%" height="100%" border="0" class=contenido>
+                <tr><td width="100%" valign=top align=right>
+                        <div class=span_login>
+            <FORM ACTION=index.html name=form_cliente METHOD=POST enctype=multipart/form-data class=form>
+            <div class="grid-container">
+            
+            
+                <div class="leyenda contenido_leyenda"></div>
+                <div class="grid-item1 contenido_normal">
+                    <label>Hora</label>
+                </div>
+                <div class="grid-item2 contenido_normal">
+                    
+                        <select size=1 name=hora_alarma class="caja_select font_campo tip_doc"><option value="00" >00</option>
+<option value="01" >01</option>
+<option value="02" >02</option>
+<option value="03" >03</option>
+<option value="04" >04</option>
+<option value="05" >05</option>
+<option value="06" >06</option>
+<option value="07" >07</option>
+<option value="08" >08</option>
+<option value="09" >09</option>
+<option value="10" >10</option>
+<option value="11" >11</option>
+<option value="12" >12</option>
+<option value="13" >13</option>
+<option value="14" >14</option>
+<option value="15" >15</option>
+<option value="16" >16</option>
+<option value="17" >17</option>
+<option value="18" >18</option>
+<option value="19" >19</option>
+<option value="20" >20</option>
+<option value="21" >21</option>
+<option value="22" >22</option>
+<option value="23" >23</option>
+</select>
+                </div>
+                <div class="grid-item3 contenido_normal">
+                     <select size=1 name=min_alarma class="caja_select font_campo tip_doc">
+<option value="00" >00</option>
+<option value="01" >01</option>
+<option value="02" >02</option>
+<option value="03" >03</option>
+<option value="04" >04</option>
+<option value="05" >05</option>
+<option value="06" >06</option>
+<option value="07" >07</option>
+<option value="08" >08</option>
+<option value="09" >09</option>
+<option value="10" >10</option>
+<option value="11" >11</option>
+<option value="12" >12</option>
+<option value="13" >13</option>
+<option value="14" >14</option>
+<option value="15" >15</option>
+<option value="16" >16</option>
+<option value="17" >17</option>
+<option value="18" >18</option>
+<option value="19" >19</option>
+<option value="20" >20</option>
+<option value="21" >21</option>
+<option value="22" >22</option>
+<option value="23" >23</option>
+<option value="24" >24</option>
+<option value="25" >25</option>
+<option value="26" >26</option>
+<option value="27" >27</option>
+<option value="28" >28</option>
+<option value="29" >29</option>
+<option value="30" >30</option>
+<option value="31" >31</option>
+<option value="32" >32</option>
+<option value="33" >33</option>
+<option value="34" >34</option>
+<option value="35" >35</option>
+<option value="36" >36</option>
+<option value="37" >37</option>
+<option value="38" >38</option>
+<option value="39" >39</option>
+<option value="40" >40</option>
+<option value="41" >41</option>
+<option value="42" >42</option>
+<option value="43" >43</option>
+<option value="44" >44</option>
+<option value="45" >45</option>
+<option value="46" >46</option>
+<option value="47" >47</option>
+<option value="48" >48</option>
+<option value="49" >49</option>
+<option value="50" >50</option>
+<option value="51" >51</option>
+<option value="52" >52</option>
+<option value="53" >53</option>
+<option value="54" >54</option>
+<option value="55" >55</option>
+<option value="56" >56</option>
+<option value="57" >57</option>
+<option value="58" >58</option>
+<option value="59" >59</option>
+</select>
+                </div>
+                <div class="grid-item4 contenido_normal">
+                     <select size=1 name=franja_alarma class="caja_select font_campo tip_doc">
+<option value="AM">AM</option>
+<option value="PM" >PM</option></select>
+                </div>
+                 <div class="grid-item5 contenido_normal">
+                     <label >Dias</label>
+                </div>
+                <div class="grid-item6 contenido_normal">
+                    <table border="0">
+                        <tr><td id=dia1 class="dia" onclick="cambiar_dia('dia1')">&nbsp;L&nbsp; </td><td id=dia2 class="dia" onclick="cambiar_dia('dia2')">&nbsp;M&nbsp;</td><td id=dia3 class="dia" onclick="cambiar_dia('dia3')">&nbsp;M&nbsp;</td><td id=dia4 class="dia" onclick="cambiar_dia('dia4')">&nbsp;J&nbsp;</td><td id=dia5 class="dia" onclick="cambiar_dia('dia5')">&nbsp;V&nbsp;</td><td id=dia6 class="dia" onclick="cambiar_dia('dia6')">&nbsp;S&nbsp;</td><td id=dia7 class="dia" onclick="cambiar_dia('dia7')">&nbsp;D&nbsp;</td></tr>
+                    </table>
+                </div>
+                <div class="grid-item7 contenido_normal">
+                    <label>Tono</label>
+                </div>
+                <div class="grid-item8 contenido_normal">
+                 <select size=1 name=franja_alarma class="caja_select font_campo tip_doc">
+                        <option >Brisa</option>
+                        <option >Ring</option>
+                    <option>Saltar</option></select>
+                </div>
+                <div class="grid-item9 contenido_normal">
+                <input name="userfile" type="file" Value="Examinar">
+                 <INPUT TYPE=BUTTON CLASS="boton3 font_boton" id=boton_importar NAME=boton_importar VALUE=Importar>
+                </div>
+                <div class="grid-item10 contenido_normal">
+                    <label for="nombre_alarma">NOmbre</label>
+                </div>
+                <div class="grid-item11 contenido_normal">
+                <input type=text class="caja_form2 font_campo email"  id=nombre_alarma name=nombre_alarma value="" placeholder="Escriba el texto">
+                </div>
+                <div class="grid-item12 contenido_normal">
+                    <label for="nombre_alarma">Repetir</label>
+                </div>
+                <div class="grid-item13 contenido_normal">
+                    Cada </div>
+                <div class="grid-item14 contenido_normal">
+                <input type=text class="caja_form2 font_campo email"  size="3" id=rep_alarma name=rep_alarma value="" placeholder="1">
+                </div>
+                <div class="grid-item15 contenido_normal">
+                <select size=1 name=frec_alarma class="caja_select font_campo tip_doc">
+                    <option >Minutos</option>
+                    <option>Horas</option>
+                <option>Dias</option></select>
+                </div>
+                <div class="grid-item16 contenido_normal">
+                    <input type=text class="caja_form2 font_campo email"  size="3" id=veces_alarma name=veces_alarma value="" placeholder="1"> 
+                </div>
+                <div class="grid-item17 contenido_normal">
+                    veces </div>
+                <div class="grid-item18 contenido_normal">
+                    <label >Notificaciones</label>
+                </div>
+                <div class="grid-item19 contenido_normal">
+                    <input type="checkbox" class="caja_form2 contenido_normal" name="check1" />Correo
+                </div><!-- comment -->
+                <div class="grid-item20 contenido_normal">
+                    <input type="checkbox" class="caja_form2 contenido_normal" name="check2"/> Llamada
+                </div><!-- comment -->
+                <div class="grid-item21 contenido_normal">
+                    <input type="checkbox" class="caja_form2 contenido_normal" name="check3"/> SMS
+                </div>
+                <div class="grid-item22 contenido_normal">
+                    <input type="checkbox" class="caja_form2 contenido_normal" name="check4"/> Whatsapp
+                </div>
+                <div class="grid-item23 contenido_normal">
+                    <input type=hidden name=menu value=12><input type=hidden name=accion value=crear>
+                    <INPUT TYPE=BUTTON CLASS="boton1 font_boton" id=boton_forma NAME=boton_forma VALUE=Crear onclick="irA('listaAlarmas.html')">
+                </div>
+                <div class="grid-item24 contenido_normal">
+                    <INPUT TYPE=BUTTON CLASS="boton2 font_boton" id=boton_cancelar NAME=boton_cancelar VALUE=Cancelar onclick="irA('listaAlarmas.html')">
+                </div>
+               
+            </div>
+        </div>
+                    </td>
+                </tr>
+            </table>
+          </span>
+        
+            </FORM>
+    </body>
+</html>

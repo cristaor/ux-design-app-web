@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Allways Oclock</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link href="styles/registro.css?n=1" rel="stylesheet" type="text/css"/>
+              <script src="script/always.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h4>Registro de Usuario</h4>
+        <div class=span_login>
+            <FORM ACTION=index.html name=form_cliente METHOD=POST enctype=multipart/form-data class=form>
+            <div class="grid-container">
+            
+            
+                <div class="leyenda contenido_leyenda"></div>
+                <div class="grid-item1 contenido_normal">
+                    <label for="correo_cliente">Correo</label>
+                </div>
+                <div class="grid-item2 contenido_normal">
+                <input type=text class=caja_form2 font_campo email  id=correo_cliente name=correo_cliente value="" placeholder=Correo(Requerido)>
+                </div>
+                <div class="grid-item3 contenido_normal">
+                     <label for="clave_cliente">Clave</label>
+                </div>
+                <div class="grid-item4 contenido_normal">
+                    <input type=password class=caja_form2 font_campo documento id=clave_cliente name=clave_cliente value="" placeholder=Clave(Requerido)>
+                </div>
+                 <div class="grid-item5 contenido_normal">
+                     <label for="clave_cliente2">Confirmar Clave</label>
+                </div>
+                <div class="grid-item6 contenido_normal">
+                    <input type=password class=caja_form2 font_campo documento id=clave_cliente2 name=clave_cliente2 value="" placeholder=Clave(Requerido)>
+                </div>
+                <div class="grid-item7 contenido_normal">
+                    <label for="nombre_cliente">Nombre</label>
+                </div>
+                <div class="grid-item8 contenido_normal">
+                <input type=text class="caja_form2 font_campo email"  id=nombre_cliente name=nombre_cliente value="" placeholder=Correo(Requerido)>
+                </div>
+                <div class="grid-item9 contenido_normal">
+                    <label for="tel_cliente">Telefono</label>
+                </div>
+                <div class="grid-item10 contenido_normal">
+                <input type=text class="caja_form2 font_campo email"  id=tel_cliente name=tel_cliente value="" placeholder=Correo(Requerido)>
+                </div>
+                <div class="grid-item11 contenido_normal">
+                    <label for="edad_cliente">Edad</label>
+                </div>
+                <div class="grid-item12 contenido_normal">
+                <select size=1 name=edad_cliente class="caja_form2 font_campo tip_doc"><option selected>18</option><option>20</option><option>35</option><option>45</option><option>55</option></select> 
+                </div>
+                <div class="grid-item13 contenido_normal">
+                    <input type=hidden name=menu value=12><input type=hidden name=accion value=crear>
+                    <INPUT TYPE=BUTTON CLASS="boton1 font_boton" id=boton_forma NAME=boton_forma VALUE=Crear onclick="irA('listaAlarmas.html')">
+                </div>
+                <div class="grid-item14 contenido_normal">
+                    <INPUT TYPE=BUTTON CLASS="boton2 font_boton" id=boton_cancelar NAME=boton_cancelar VALUE=Cancelar onclick="irA('index.html')">
+                </div>
+               
+            </div>
+        </div>
+            </FORM>
+    </body>
+</html>
